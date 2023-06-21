@@ -1,0 +1,122 @@
+html {
+  background-image: url(./background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  max-width: 400px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.icon {
+  display: inline-block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-location {
+  background-image: url(./location.png);
+  width: 48px;
+  height: 48px;
+}
+
+.icon-phone {
+  background-image: url(./phone.png);
+  width: 24px;
+  height: 24px;
+}
+
+.icon-whatsapp {
+  background-image: url(./whatsapp.png);
+  width: 24px;
+  height: 24px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+main > :nth-child(1) {
+  margin-right: 16px;
+}
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  main > * {
+    margin-top: 1em;
+  }
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+a {
+  text-decoration: none !important;
+  color: #000000;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.contacts a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contacts a:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.logo {
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+
+.address {
+  font-size: 1.15rem;
+}
+
+footer {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
